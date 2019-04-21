@@ -1,0 +1,11 @@
+{
+    "defaultEnv": "dev_local",
+    "dev_local": {
+        "driver": "mysql",
+        "user": {"ENV": "DEV_LOCAL_DB_USER"},
+        "password": {"ENV": "DEV_LOCAL_DB_PASSWORD"},
+        "host": {"ENV": "DEV_LOCAL_DB_HOST"},
+        "database": {"ENV": "DEV_LOCAL_DB_NAME"},
+        "multipleStatements": true
+    }
+}

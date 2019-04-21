@@ -1,0 +1,18 @@
+{
+  "name": "sms-service-db-migrate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-migration": "node_modules/db-migrate/bin/db-migrate create"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "db-migrate": "^0.11.5",
+    "db-migrate-mysql": "^1.1.10",
+    "dotenv": "^7.0.0"
+  }
+}
