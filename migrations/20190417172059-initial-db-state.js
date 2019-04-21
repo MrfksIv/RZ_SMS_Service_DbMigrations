@@ -19,6 +19,10 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db) {
+  console.log(process.env.DEV_LOCAL_DB_HOST);
+  console.log(process.env.DEV_LOCAL_DB_USER);
+  console.log(process.env.DEV_LOCAL_DB_PASSWORD);
+  console.log(process.env.DEV_LOCAL_DB_NAME);
   var filePath = path.join(__dirname, 'sqls', '20190417172059-initial-db-state-up.sql');
   return new Promise( function( resolve, reject ) {
     fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
